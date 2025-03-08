@@ -33,7 +33,7 @@ anime({
 anime({
     targets: '.square',
     scale: [
-        {value: .5, easing: 'easeOutSine', duration: 500},
+        {value: 1.3, easing: 'easeOutSine', duration: 500},
         {value: 1, easing: 'easeInOutQuad', duration: 1500}
     ],
     loop: true,
