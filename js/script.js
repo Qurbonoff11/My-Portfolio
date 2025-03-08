@@ -1,5 +1,5 @@
 var typed5 = new Typed('#typing', {
-    strings: ['Effective Problem Solver', 'Passionate Blockchain Enthusiast', 'Full Stack Developer', 'Committed Open Source Contributor'],
+    strings: ['Effective Problem Solver', 'Passionate Blockchain Enthusiast', 'Full Stack Developer', 'Committed Open Source Contributor', 'Graphic Designer'],
     typeSpeed: 60,
     backSpeed: 25,
     cursorChar: '|',
