@@ -30,4 +30,42 @@ anime({
     easing: 'easeInOutQuad'
 });
 
+
+var roundLogEl = document.querySelector('.region_code');
+anime({
+    targets: roundLogEl,
+    innerHTML: [0, 998],
+    easing: 'linear',
+    round: 10
+});
+var roundLogEl = document.querySelector('.code');
+anime({
+    targets: roundLogEl,
+    innerHTML: [0, 94],
+    easing: 'linear',
+    round: 10
+});
+var roundLogEl = document.querySelector('.number1');
+anime({
+    targets: roundLogEl,
+    innerHTML: [0, 333],
+    easing: 'linear',
+    round: 10
+});
+var roundLogEl = document.querySelector('.number2');
+anime({
+    targets: roundLogEl,
+    innerHTML: [0, 200],
+    easing: 'linear',
+    round: 10
+});
+var roundLogEl = document.querySelector('.number3');
+anime({
+    targets: roundLogEl,
+    innerHTML: [0, 6],
+    easing: 'linear',
+    round: 10
+});
+
+
 AOS.init();
