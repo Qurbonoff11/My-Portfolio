@@ -33,11 +33,11 @@ anime({
 anime({
     targets: '.square',
     scale: [
-        {value: .1, easing: 'easeOutSine', duration: 500},
-        {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        {value: .5, easing: 'easeOutSine', duration: 500},
+        {value: 1, easing: 'easeInOutQuad', duration: 1500}
     ],
     loop: true,
-    delay: anime.stagger(200, {grid: [14, 5], from: 'center'})
+    delay: anime.stagger(300, {grid: [5, 4], from: 'center'})
 });
 
 
