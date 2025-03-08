@@ -3,6 +3,31 @@
 
 .skills{
     width: 100%;
-    height: 50rem;
+    height: 45rem;
     background-color: $bg-gray;
+    @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
+
+    .cont{
+        height: 100%;
+        @include mixins.flexbox(center, center, column, nowrap, 5rem);
+
+        h2{
+            font-size: $fs-48;
+            color: $text-white;
+            font-weight: $fw-600;
+
+            span{
+                color: $text-cyan;
+                text-shadow: 0 0 10px $bg-cyan;
+            }
+        }
+
+        .skills_list{
+            @include mixins.gridbox(5, 4, 2rem);
+
+            img{
+                height: 4rem;
+            }
+        }
+    }
 }

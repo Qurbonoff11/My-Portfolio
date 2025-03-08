@@ -19,4 +19,15 @@ anime({
     loop: true
 });
 
+anime({
+    targets: '.square',
+    translateX: anime.stagger(15, {grid: [5, 4], from: 'center', axis: 'x'}),
+    translateY: anime.stagger(15, {grid: [5, 4], from: 'center', axis: 'y'}),
+    rotateZ: anime.stagger([0, 90], {grid: [5, 4], from: 'center', axis: 'x'}),
+    delay: anime.stagger(300, {grid: [5, 4], from: 'center'}),
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+});
+
 AOS.init();
