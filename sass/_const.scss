@@ -1,0 +1,48 @@
+@use "./roots" as *;
+@use "./mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    @include mixins.flexbox(center, center, column, nowrap, 0);
+    margin-top: 0rem;
+    // background-color: $bg-gray;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar{
+    position: fixed;
+    width: .3rem;
+    height: 2rem;
+}
+::-webkit-scrollbar-track{
+    background: $bg-gray;
+    // margin-block: .3rem;
+    // margin-inline: .3rem;
+}
+::-webkit-scrollbar-thumb{
+    background: $bg-cyan;
+    border-radius: $br-32;
+}

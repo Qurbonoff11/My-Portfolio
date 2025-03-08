@@ -1,0 +1,10 @@
+// FLEXBOX
+@mixin flexbox($justify, $align, $direction, $wrap, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
