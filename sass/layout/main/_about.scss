@@ -4,12 +4,15 @@
 .about{
     width: 100%;
     height: 45rem;
-    background-color: $bg-gray;
+    // background-color: $bg-gray;
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
     .cont{
-        @include mixins.flexbox(space-between, center, row, nowrap, 5rem);
+        @include mixins.flexbox(space-between, center, row, wrap, 5rem);
 
+        @media only screen and (max-width: 1024px){
+            @include mixins.flexbox(center, center, column-reverse, wrap, 5rem);
+        }
         .about_img{
             .img{
                 width: 30rem;
@@ -25,8 +28,12 @@
         }
 
         .about_text{
-            @include mixins.flexbox(center, flex-start, column, nowrap, 2rem);
+            @include mixins.flexbox(center, flex-start, column, nowrap, 1rem);
 
+            @media only screen and (max-width: 1024px){
+                @include mixins.flexbox(center, center, column, wrap, 1rem);
+                text-align: center;
+            }
             h2{
                 font-size: $fs-48;
                 font-weight: $fw-800;

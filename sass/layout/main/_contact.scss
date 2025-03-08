@@ -4,7 +4,7 @@
 .contact{
     width: 100%;
     height: 25rem;
-    background-color: $bg-gray;
+    // background-color: $bg-gray;
     @include mixins.flexbox(center, center, row, nowrap, 0);
 
     .cont{
