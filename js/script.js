@@ -18,3 +18,5 @@ anime({
     direction: 'alternate',
     loop: true
 });
+
+AOS.init();

@@ -8,7 +8,7 @@
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
     .cont{
-        @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
+        @include mixins.flexbox(space-between, center, row, nowrap, 8rem);
 
         .home_text{
             // @include mixins.flexbox(flex-start, flex-start, column, nowrap, 1rem);
@@ -21,6 +21,8 @@
                 span{
                     font-size: $fs-48;
                     color: $text-cyan;
+                    font-family: $roboto;
+                    font-weight: $fw-600;
                     text-shadow: 0 0 10px $bg-cyan;
                 }
             }

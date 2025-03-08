@@ -3,6 +3,48 @@
 
 .about{
     width: 100%;
-    height: 50rem;
+    height: 45rem;
     background-color: $bg-gray;
+    @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
+
+    .cont{
+        @include mixins.flexbox(space-between, center, row, nowrap, 5rem);
+
+        .about_img{
+            .img{
+                width: 30rem;
+                height: 30rem;
+                border: 3px solid $bg-cyan;
+                box-shadow: 0 0 15px $bg-cyan;
+                border-radius: 50%;
+                background-image: linear-gradient(rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.2)), url("../../../assets/img/satura_gojo.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .about_text{
+            @include mixins.flexbox(center, flex-start, column, nowrap, 2rem);
+
+            h2{
+                font-size: $fs-48;
+                font-weight: $fw-800;
+                color: $text-white;
+                span{
+                    color: $text-cyan;
+                    text-shadow: 0 0 10px $bg-cyan;
+                }
+            }
+            p{
+                font-size: $fs-20;
+                font-weight: $fw-500;
+                color: $text-white;
+                span{
+                    color: $text-cyan;
+                    text-shadow: 0 0 10px $bg-cyan;
+                }
+            }
+        }
+    }
 }

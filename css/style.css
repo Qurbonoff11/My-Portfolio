@@ -133,7 +133,7 @@ main {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 3rem;
+  gap: 8rem;
 }
 .home .cont .home_text h2 {
   font-size: 48px;
@@ -144,6 +144,8 @@ main {
 .home .cont .home_text h2 span {
   font-size: 48px;
   color: #00ffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   text-shadow: 0 0 10px #00ffff;
 }
 .home .cont .home_text h1 {
@@ -178,8 +180,59 @@ main {
 
 .about {
   width: 100%;
-  height: 50rem;
+  height: 45rem;
   background-color: #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3rem;
+}
+.about .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5rem;
+}
+.about .cont .about_img .img {
+  width: 30rem;
+  height: 30rem;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.2)), url("../../../assets/img/satura_gojo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about .cont .about_text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.about .cont .about_text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+}
+.about .cont .about_text h2 span {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+.about .cont .about_text p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.about .cont .about_text p span {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
 .skills {
