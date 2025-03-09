@@ -150,7 +150,7 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  width: 40%;
+  width: 50%;
   background-color: #333;
   z-index: 999;
   padding: 1rem;
@@ -223,11 +223,6 @@ main {
 @media only screen and (max-width: 425px) {
   .home {
     height: 48rem;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .home {
-    height: 42rem;
   }
 }
 .home .cont {
@@ -373,11 +368,6 @@ main {
     height: 55rem;
   }
 }
-@media only screen and (max-width: 375px) {
-  .about {
-    height: 35rem;
-  }
-}
 .about .cont {
   display: flex;
   justify-content: space-between;
@@ -448,12 +438,12 @@ main {
 }
 @media only screen and (max-width: 425px) {
   .about .cont .about_text h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 375px) {
   .about .cont .about_text h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .about .cont .about_text p {
@@ -485,11 +475,6 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 3rem;
-}
-@media only screen and (max-width: 375px) {
-  .skills {
-    height: 40rem;
-  }
 }
 .skills .cont {
   height: 100%;
@@ -551,11 +536,6 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0;
-}
-@media only screen and (max-width: 425px) {
-  .contact {
-    height: 20rem;
-  }
 }
 .contact .cont {
   display: flex;

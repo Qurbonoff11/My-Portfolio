@@ -13,9 +13,9 @@
     @media only screen and (max-width: 768px) {
         height: 55rem;
     }
-    @media only screen and (max-width: 375px) {
-        height: 35rem;
-    }
+    // @media only screen and (max-width: 375px) {
+    //     height: 35rem;
+    // }
 
     .cont{
         @include mixins.flexbox(space-between, center, row, nowrap, 5rem);
@@ -63,10 +63,10 @@
                 }
 
                 @media only screen and (max-width: 425px){
-                    font-size: $fs-36;
+                    font-size: $fs-28;
                 }
                 @media only screen and (max-width: 375px){
-                    font-size: $fs-28;
+                    font-size: $fs-24;
                 }
             }
             p{

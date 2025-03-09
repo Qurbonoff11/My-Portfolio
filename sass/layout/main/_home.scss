@@ -13,9 +13,9 @@
     @media only screen and (max-width: 425px) {
         height: 48rem;
     }
-    @media only screen and (max-width: 375px) {
-        height: 42rem;
-    }
+    // @media only screen and (max-width: 375px) {
+    //     height: 42rem;
+    // }
     .cont{
         @include mixins.flexbox(space-between, center, row, nowrap, 8rem);
 

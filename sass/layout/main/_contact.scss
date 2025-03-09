@@ -7,9 +7,9 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(center, center, row, nowrap, 0);
 
-    @media only screen and (max-width: 425px){
-        height: 20rem;
-    }
+    // @media only screen and (max-width: 425px){
+    //     height: 20rem;
+    // }
 
     .cont{
         @include mixins.flexbox(center, center, column, nowrap, 3rem);
