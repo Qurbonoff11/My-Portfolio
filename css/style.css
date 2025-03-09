@@ -116,6 +116,9 @@ main {
   color: #00ffff;
   text-shadow: 0 0 5px #00ffff;
 }
+.header .nav .nav_icons {
+  display: none;
+}
 
 .home {
   width: 100%;
@@ -316,7 +319,6 @@ main {
 .contact .cont .contact_list i:hover {
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
-  font-size: 48px;
 }
 .contact .cont p {
   color: #fff;
