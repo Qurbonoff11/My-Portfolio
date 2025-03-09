@@ -20,6 +20,26 @@ anime({
 });
 
 // anime({
+//     targets: '#demo-svg-mobile-xxl #path_1, #demo-svg-mobile-xxl #path_2',
+//     strokeDashoffset: [anime.setDashoffset, 0],
+//     easing: 'easeInOutSine',
+//     duration: 5000,
+//     // delay: function(el, i) { return i * 250 },
+//     direction: 'alternate',
+//     loop: true
+// });
+
+// anime({
+//     targets: '#demo-svg-mobile-xl #path_1, #demo-svg-mobile-xl #path_2',
+//     strokeDashoffset: [anime.setDashoffset, 0],
+//     easing: 'easeInOutSine',
+//     duration: 5000,
+//     // delay: function(el, i) { return i * 250 },
+//     direction: 'alternate',
+//     loop: true
+// });
+
+// anime({
 //     targets: '.square',
 //     translateX: anime.stagger(15, {grid: [5, 4], from: 'center', axis: 'x'}),
 //     translateY: anime.stagger(15, {grid: [5, 4], from: 'center', axis: 'y'}),
@@ -79,3 +99,16 @@ anime({
 
 
 AOS.init();
+
+
+
+// Navbar
+
+function showSidebar() {
+    const sidebar = document.querySelector(".nav_menu")
+    sidebar.style.display = "flex"
+}
+function closeSidebar() {
+    const sidebar = document.querySelector(".nav_menu")
+    sidebar.style.display = "none"
+}

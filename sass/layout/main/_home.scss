@@ -7,11 +7,23 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
+    @media only screen and (max-width: 1024px) {
+        height: 55rem;
+    }
+    @media only screen and (max-width: 425px) {
+        height: 48rem;
+    }
+    @media only screen and (max-width: 375px) {
+        height: 42rem;
+    }
     .cont{
         @include mixins.flexbox(space-between, center, row, nowrap, 8rem);
 
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexbox(center, center, column, nowrap, 3rem);
+        }
+
         .home_text{
-            // @include mixins.flexbox(flex-start, flex-start, column, nowrap, 1rem);
             h2{
                 font-size: $fs-48;
                 color: $text-white;
@@ -24,6 +36,19 @@
                     font-family: $roboto;
                     font-weight: $fw-600;
                     text-shadow: 0 0 10px $bg-cyan;
+                    @media only screen and (max-width: 425px) {
+                        font-size: $fs-28;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        font-size: $fs-24;
+                    }
+                }
+
+                @media only screen and (max-width: 425px) {
+                    font-size: $fs-28;
+                }
+                @media only screen and (max-width: 375px) {
+                    font-size: $fs-24;
                 }
             }
             h1{
@@ -37,19 +62,41 @@
                     font-weight: $fw-700;
                     color: $text-cyan;
                     text-shadow: 0 0 10px $bg-cyan;
-
+                    @media only screen and (max-width: 425px) {
+                        font-size: $fs-36;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        font-size: $fs-32;
+                    }
                 }
+
+                @media only screen and (max-width: 425px) {
+                    font-size: $fs-36;
+                }
+                @media only screen and (max-width: 375px) {
+                    font-size: $fs-32;
+                }
+
             }
             span{
                 font-size: $fs-20;
                 color: $text-white;
                 font-family: $fira-code;
                 font-weight: 400;
+
+                @media only screen and (max-width: 425px) {
+                    font-size: $fs-16;
+                }
+                @media only screen and (max-width: 375px) {
+                    font-size: $fs-14;
+                }
             }
         }
 
         .home_img{
             #demo-svg{
+                width: 500px;
+                overflow: visible;
                 filter: drop-shadow(0 0 7px $bg-cyan);
 
                 #path_1{
@@ -60,7 +107,58 @@
                     stroke-dasharray: 2200;
                     stroke-dashoffset: 0;
                 }
+
+                @media only screen and (max-width: 1024px) {
+                    width: 300px;
+                }
+                @media only screen and (max-width: 375px) {
+                    width: 200px;
+                }
             }
+
+            // #demo-svg-mobile-xxl{
+            //     display: none;
+            //     width: 20vw;
+            //     overflow: visible;
+            //     filter: drop-shadow(0 0 7px $bg-cyan);
+
+            //     #path_1{
+            //         stroke-dasharray: 1000;
+            //         stroke-dashoffset: 0;
+            //     }
+            //     #path_2{
+            //         stroke-dasharray: 2200;
+            //         stroke-dashoffset: 0;
+            //     }
+
+            //     @media only screen and (max-width: 1024px) {
+            //         display: block;
+            //     }
+            //     @media only screen and (max-width: 768px) {
+            //         display: none;
+            //     }
+            // }
+
+            // #demo-svg-mobile-xl{
+            //     display: none;
+            //     width: 10rem;
+            //     overflow: visible;
+            //     filter: drop-shadow(0 0 7px $bg-cyan);
+
+            //     #path_1{
+            //         stroke-dasharray: 1000;
+            //         stroke-dashoffset: 0;
+            //     }
+            //     #path_2{
+            //         stroke-dasharray: 2200;
+            //         stroke-dashoffset: 0;
+            //     }
+
+            //     @media only screen and (max-width: 768px) {
+            //         display: block;
+            //     }
+            // }
+
         }
     }
 }

@@ -7,6 +7,10 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
+    @media only screen and (max-width: 375px){
+        height: 40rem;
+    }
+
     .cont{
         height: 100%;
         @include mixins.flexbox(center, center, column, nowrap, 5rem);
@@ -20,13 +24,28 @@
                 color: $text-cyan;
                 text-shadow: 0 0 10px $bg-cyan;
             }
+
+            @media only screen and (max-width: 425px){
+                font-size: $fs-36;
+            }
+            @media only screen and (max-width: 375px){
+                font-size: $fs-32;
+            }
         }
 
         .skills_list{
             @include mixins.gridbox(5, 4, 2rem);
 
+            @media only screen and (max-width: 425px){
+                @include mixins.gridbox(4, 5, 2rem);
+            }
+
             img{
                 height: 4rem;
+
+                @media only screen and (max-width: 425px){
+                    height: 3rem;
+                }
             }
         }
     }

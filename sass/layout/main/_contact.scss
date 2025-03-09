@@ -7,6 +7,10 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(center, center, row, nowrap, 0);
 
+    @media only screen and (max-width: 425px){
+        height: 20rem;
+    }
+
     .cont{
         @include mixins.flexbox(center, center, column, nowrap, 3rem);
 
@@ -19,6 +23,13 @@
                 color: $text-cyan;
                 text-shadow: 0 0 10px $bg-cyan;
             }
+
+            @media only screen and (max-width: 425px){
+                font-size: $fs-36;
+            }
+            @media only screen and (max-width: 375px){
+                font-size: $fs-32;
+            }
         }
 
         .contact_list{
@@ -29,6 +40,10 @@
                 font-size: $fs-40;
                 font-weight: $fw-100;
                 transition: all .4s ease;
+
+                @media only screen and (max-width: 375px){
+                    font-size: $fs-32;
+                }
 
                 &:hover{
                     color: $text-cyan;
@@ -44,10 +59,18 @@
             text-shadow: 0 0 10px $bg-cyan;
             @include mixins.flexbox(center, center, row, nowrap, .7rem);
 
+            @media only screen and (max-width: 375px){
+                font-size: $fs-20;
+            }
+
             i{
                 color: $text-cyan;
                 font-size: $fs-36;
                 font-weight: $fw-100;
+
+                @media only screen and (max-width: 375px){
+                    font-size: $fs-32;
+                }
             }
         }
 

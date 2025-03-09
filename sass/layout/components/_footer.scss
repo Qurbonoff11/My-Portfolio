@@ -12,5 +12,9 @@
         color: $text-white;
         font-weight: $fw-600;
         font-family: $fira-code;
+
+        @media only screen and (max-width: 425px){
+            font-size: $fs-12;
+        }
     }
 }

@@ -25,11 +25,28 @@ main{
     @include mixins.flexbox(center, center, column, nowrap, 0);
     margin-top: 0rem;
     background-color: $bg-gray;
+
+    @media only screen and (max-width: 1024px){
+        margin-top: 0rem;
+    }
 }
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1024px){
+        max-width: 920px;
+    }
+    @media only screen and (max-width: 768px){
+        max-width: 700px;
+    }
+    @media only screen and (max-width: 480px){
+        max-width: 360px;
+    }
+    @media only screen and (max-width: 375px){
+        max-width: 300px;
+    }
 }
 
 ::-webkit-scrollbar{

@@ -7,8 +7,26 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
+    @media only screen and (max-width: 1024px) {
+        height: 25rem;
+    }
+    @media only screen and (max-width: 768px) {
+        height: 55rem;
+    }
+    @media only screen and (max-width: 375px) {
+        height: 35rem;
+    }
+
     .cont{
         @include mixins.flexbox(space-between, center, row, nowrap, 5rem);
+
+        @media only screen and (max-width: 1024px) {
+            @include mixins.flexbox(center, center, row-reverse, nowrap, 5rem);
+        }
+        @media only screen and (max-width: 768px) {
+            @include mixins.flexbox(center, center, column-reverse, nowrap, 5rem);
+        }
+
         .about_img{
             .img{
                 width: 30rem;
@@ -20,6 +38,15 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 20rem;
+                    height: 20rem;
+                }
+                @media only screen and (max-width: 375px) {
+                    width: 16rem;
+                    height: 16rem;
+                }
             }
         }
 
@@ -34,6 +61,13 @@
                     color: $text-cyan;
                     text-shadow: 0 0 10px $bg-cyan;
                 }
+
+                @media only screen and (max-width: 425px){
+                    font-size: $fs-36;
+                }
+                @media only screen and (max-width: 375px){
+                    font-size: $fs-28;
+                }
             }
             p{
                 font-size: $fs-20;
@@ -42,6 +76,12 @@
                 span{
                     color: $text-cyan;
                     text-shadow: 0 0 10px $bg-cyan;
+                }
+                @media only screen and (max-width: 425px){
+                    font-size: $fs-16;
+                }
+                @media only screen and (max-width: 375px){
+                    font-size: $fs-14;
                 }
             }
         }
