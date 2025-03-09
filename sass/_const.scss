@@ -30,11 +30,6 @@ main{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-
-    @media only screen and (max-width: 1024px){
-        max-width: 90%;
-        margin: 0 auto;
-    }
 }
 
 ::-webkit-scrollbar{

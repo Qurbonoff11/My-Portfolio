@@ -7,16 +7,8 @@
     // background-color: $bg-gray;
     @include mixins.flexbox(space-between, center, row, nowrap, 3rem);
 
-
-    @media only screen and (max-width: 1024px){
-        height: 70rem;
-    }
     .cont{
-        @include mixins.flexbox(space-between, center, row, wrap-reverse, 8rem);
-
-        @media only screen and (max-width: 1024px){
-            @include mixins.flexbox(center, center, column, wrap, 5rem);
-        }
+        @include mixins.flexbox(space-between, center, row, nowrap, 8rem);
 
         .home_text{
             // @include mixins.flexbox(flex-start, flex-start, column, nowrap, 1rem);

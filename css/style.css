@@ -33,12 +33,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1024px) {
-  .container {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
 
 ::-webkit-scrollbar {
   position: fixed;
@@ -133,28 +127,13 @@ main {
   flex-wrap: nowrap;
   gap: 3rem;
 }
-@media only screen and (max-width: 1024px) {
-  .home {
-    height: 70rem;
-  }
-}
 .home .cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
   gap: 8rem;
-}
-@media only screen and (max-width: 1024px) {
-  .home .cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5rem;
-  }
 }
 .home .cont .home_text h2 {
   font-size: 48px;
@@ -214,18 +193,8 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 5rem;
-}
-@media only screen and (max-width: 1024px) {
-  .about .cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    gap: 5rem;
-  }
 }
 .about .cont .about_img .img {
   width: 30rem;
@@ -245,17 +214,6 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 1rem;
-}
-@media only screen and (max-width: 1024px) {
-  .about .cont .about_text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    text-align: center;
-  }
 }
 .about .cont .about_text h2 {
   font-size: 48px;
