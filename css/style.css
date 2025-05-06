@@ -402,7 +402,7 @@ main {
   border: 3px solid #00ffff;
   box-shadow: 0 0 15px #00ffff;
   border-radius: 50%;
-  background-image: linear-gradient(rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.2)), url("../../../assets/img/satura_gojo.png");
+  background-image: url("../../../assets/img/Jonic.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
